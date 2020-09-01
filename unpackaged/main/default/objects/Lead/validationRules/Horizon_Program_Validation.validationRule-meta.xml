@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Horizon_Program_Validation</fullName>
+    <active>false</active>
+    <description>Only allows program for Horizon to be Cardiac, Renew or Respiratory</description>
+    <errorConditionFormula>IF(ISPICKVAL( ClientName__c , "Horizon"),IF(OR(ISPICKVAL( AbleToProgram__c , "Renew"),ISPICKVAL(AbleToProgram__c , "Respiratory"),ISPICKVAL(AbleToProgram__c , "Cardiac Health Forum"), ISPICKVAL(AbleToProgram__c , "Not Indicated")),FALSE,TRUE),FALSE)</errorConditionFormula>
+    <errorDisplayField>AbleToProgram__c</errorDisplayField>
+    <errorMessage>Horizon members can only be scheduled for Cardiac, Renew or Respiratory programs. Please choose an appropriate selection.</errorMessage>
+</ValidationRule>

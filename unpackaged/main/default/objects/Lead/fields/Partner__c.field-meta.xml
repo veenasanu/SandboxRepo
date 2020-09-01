@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner__c</fullName>
+    <description>THIS FIELD IS TRANSFERRED TO ENABLETO</description>
+    <externalId>false</externalId>
+    <label>Partner</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Weill Cornell Medical</fullName>
+                <default>false</default>
+                <label>Weill Cornell Medical</label>
+            </value>
+            <value>
+                <fullName>Quitnet</fullName>
+                <default>false</default>
+                <label>Quitnet</label>
+            </value>
+            <value>
+                <fullName>Unum</fullName>
+                <default>false</default>
+                <label>Unum</label>
+            </value>
+            <value>
+                <fullName>Equity Healthcare</fullName>
+                <default>false</default>
+                <label>Equity Healthcare</label>
+            </value>
+            <value>
+                <fullName>Innovation Health</fullName>
+                <default>false</default>
+                <label>Innovation Health</label>
+            </value>
+            <value>
+                <fullName>Osler</fullName>
+                <default>false</default>
+                <label>Osler</label>
+            </value>
+            <value>
+                <fullName>Princeton Medical Group</fullName>
+                <default>false</default>
+                <label>Princeton Medical Group</label>
+            </value>
+            <value>
+                <fullName>Advocare</fullName>
+                <default>false</default>
+                <label>Advocare</label>
+            </value>
+            <value>
+                <fullName>VNAHG - HHS (Home Health Services)</fullName>
+                <default>false</default>
+                <label>VNAHG - HHS (Home Health Services)</label>
+            </value>
+            <value>
+                <fullName>VNAHG - CPC+ (Medicare CPC+ Program)</fullName>
+                <default>false</default>
+                <label>VNAHG - CPC+ (Medicare CPC+ Program)</label>
+            </value>
+            <value>
+                <fullName>Family Medicine Center</fullName>
+                <default>false</default>
+                <label>Family Medicine Center</label>
+            </value>
+            <value>
+                <fullName>Shore Physicians Group</fullName>
+                <default>false</default>
+                <label>Shore Physicians Group</label>
+            </value>
+            <value>
+                <fullName>Banner Health</fullName>
+                <default>false</default>
+                <label>Banner Health</label>
+            </value>
+            <value>
+                <fullName>Beacon Health</fullName>
+                <default>false</default>
+                <label>Beacon Health</label>
+            </value>
+            <value>
+                <fullName>Quartet</fullName>
+                <default>false</default>
+                <label>Quartet</label>
+            </value>
+            <value>
+                <fullName>South Shore Collaborative Psychiatry</fullName>
+                <default>false</default>
+                <label>South Shore Collaborative Psychiatry</label>
+            </value>
+            <value>
+                <fullName>HouseCalls</fullName>
+                <default>false</default>
+                <label>HouseCalls</label>
+            </value>
+            <value>
+                <fullName>Diabetes Support Program</fullName>
+                <default>false</default>
+                <label>Diabetes Support Program</label>
+            </value>
+            <value>
+                <fullName>Physician Group</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Physician Group</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

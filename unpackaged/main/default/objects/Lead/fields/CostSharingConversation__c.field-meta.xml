@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CostSharingConversation__c</fullName>
+    <description>Result of the Cost Sharing Conversation (Text)
+
+THIS FIELD IS TRANSFERRED TO ENABLETO</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>As of (date)- $x Ded, $x Copay  or x% Coinsurance, plan reset (date)</inlineHelpText>
+    <label>COST SHARING CONVERSATION</label>
+    <length>8000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

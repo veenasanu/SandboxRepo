@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WeightedRanking__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Source__c,"STD"), 99, 
+
+    IF(Opened_Marketo_Email__c=True, 105, 
+
+       IF(
+         AND(
+             OR(ISPICKVAL(ClientName__c,"Aetna"), 
+                ISPICKVAL(ClientName__c,"United Retiree Services")),
+
+           ISPICKVAL(Source__c,"Data")), Ranking__c, 
+        100)
+
+    )
+)</formula>
+    <label>Weighted Ranking</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

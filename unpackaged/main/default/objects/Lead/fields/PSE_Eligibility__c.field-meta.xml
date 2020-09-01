@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PSE_Eligibility__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND( 
+
+ISPICKVAL( ClientName__c , "Aetna"), 
+
+ISPICKVAL( Source__c,"Data"), 
+
+HDHP_Indicator__c = "Fully Covered", 
+
+Soft_Opt_Out__c = False, 
+
+DATEVALUE( Last_Referral_Date__c ) &gt;= DATE(2019,4,1), 
+
+ISPICKVAL(PrimarySubscriber__c,"Yes")
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PSE Eligibility</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

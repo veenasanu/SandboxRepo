@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missed_IC_Follow_Up__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>field is populated from missed IC looker report 
+https://looker.ableto.com/looks/6628
+leads are updated to reflect this field as true and comparative analyses is done to see if they have been redialed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>field is populated from missed IC looker report.</inlineHelpText>
+    <label>Missed IC Follow Up</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

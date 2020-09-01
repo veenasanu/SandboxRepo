@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_owner_cant_be_admin_for_ic_schedule</fullName>
+    <active>true</active>
+    <description>If the lead owner is ableto admin then you can not choose customer status IC schedule</description>
+    <errorConditionFormula>AND(
+OwnerId = '00536000002gx4X',
+ISPICKVAL(CustomerStatus__c , 'IC_Scheduled'),
+$UserRole.Name &lt;&gt; 'Administrator'
+)</errorConditionFormula>
+    <errorMessage>You must change the owner from ableto admin in order to schedule an IC any questions please see system administrator. Thank You,</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_BCBST</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+   ISPICKVAL(ClientName__c, "BCBST"), 
+   Group_PlanSponsor__c &lt;&gt; "BCBST Medicare Advantage",
+   Group_PlanSponsor__c &lt;&gt; "BCBST CSNP",
+   Group_PlanSponsor__c &lt;&gt; "BCBST DSNP",
+   Group_PlanSponsor__c &lt;&gt; "BCBST FIDE",
+   Group_PlanSponsor__c &lt;&gt; "Call Request",
+   Group_PlanSponsor__c &lt;&gt; "Screener"
+)</errorConditionFormula>
+    <errorDisplayField>Group_PlanSponsor__c</errorDisplayField>
+    <errorMessage>Group/Plan Sponsor must be BCBST Medicare Advantage, BCBST CSNP, BCBST DSNP, or BCBST FIDE</errorMessage>
+</ValidationRule>

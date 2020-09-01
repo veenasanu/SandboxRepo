@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Specifics__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Identifies the value linked to the campaign</inlineHelpText>
+    <label>Campaign Specifics</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Campaigns__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Holistic health - eligibility</fullName>
+                <default>false</default>
+                <label>Holistic health - eligibility</label>
+            </value>
+            <value>
+                <fullName>Holistic health - follow-up</fullName>
+                <default>false</default>
+                <label>Holistic health - follow-up</label>
+            </value>
+            <value>
+                <fullName>Holistic health - health &amp; you</fullName>
+                <default>false</default>
+                <label>Holistic health - health &amp; you</label>
+            </value>
+            <value>
+                <fullName>Stress health - HTML</fullName>
+                <default>false</default>
+                <label>Stress health - HTML</label>
+            </value>
+            <value>
+                <fullName>Stress health - Letter</fullName>
+                <default>false</default>
+                <label>Stress health - Letter</label>
+            </value>
+            <value>
+                <fullName>Holistic health- HTML</fullName>
+                <default>false</default>
+                <label>Holistic health- HTML</label>
+            </value>
+            <value>
+                <fullName>Holistic health- Letter</fullName>
+                <default>false</default>
+                <label>Holistic health- Letter</label>
+            </value>
+            <value>
+                <fullName>Medical health- HTML</fullName>
+                <default>false</default>
+                <label>Medical health- HTML</label>
+            </value>
+            <value>
+                <fullName>Medical health - Letter</fullName>
+                <default>false</default>
+                <label>Medical health - Letter</label>
+            </value>
+            <value>
+                <fullName>Winning Cohort</fullName>
+                <default>false</default>
+                <label>Winning Cohort</label>
+            </value>
+            <value>
+                <fullName>Holistic health - eligibility 2</fullName>
+                <default>false</default>
+                <label>Holistic health - eligibility 2</label>
+            </value>
+            <value>
+                <fullName>Holistic health - health &amp; you 2</fullName>
+                <default>false</default>
+                <label>Holistic health - health &amp; you 2</label>
+            </value>
+            <value>
+                <fullName>Holistic health - follow-up 2</fullName>
+                <default>false</default>
+                <label>Holistic health - follow-up 2</label>
+            </value>
+            <value>
+                <fullName>Holistic health - eligibility 3</fullName>
+                <default>false</default>
+                <label>Holistic health - eligibility 3</label>
+            </value>
+            <value>
+                <fullName>Horizon Interim</fullName>
+                <default>false</default>
+                <label>Horizon Interim</label>
+            </value>
+            <value>
+                <fullName>Holistic Health Letter 2nd</fullName>
+                <default>false</default>
+                <label>Holistic Health Letter 2nd</label>
+            </value>
+            <value>
+                <fullName>Holistic Health HTML 2nd</fullName>
+                <default>false</default>
+                <label>Holistic Health HTML 2nd</label>
+            </value>
+            <value>
+                <fullName>Holistic Health Letter 3rd</fullName>
+                <default>false</default>
+                <label>Holistic Health Letter 3rd</label>
+            </value>
+            <value>
+                <fullName>Holistic Health HTML 3rd</fullName>
+                <default>false</default>
+                <label>Holistic Health HTML 3rd</label>
+            </value>
+            <value>
+                <fullName>Text</fullName>
+                <default>false</default>
+                <label>Text</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Stress health 2 - HTML</fullName>
+                <default>false</default>
+                <label>Stress health 2 - HTML</label>
+            </value>
+            <value>
+                <fullName>Stress health 2 - Letter</fullName>
+                <default>false</default>
+                <label>Stress health 2 - Letter</label>
+            </value>
+            <value>
+                <fullName>Medical health - HTML - 2</fullName>
+                <default>false</default>
+                <label>Medical health - HTML - 2</label>
+            </value>
+            <value>
+                <fullName>Medical health - Letter - 2</fullName>
+                <default>false</default>
+                <label>Medical health - Letter - 2</label>
+            </value>
+            <value>
+                <fullName>Horizon Lookup</fullName>
+                <default>false</default>
+                <label>Horizon Lookup</label>
+            </value>
+            <value>
+                <fullName>Opt-In</fullName>
+                <default>false</default>
+                <label>Opt-In</label>
+            </value>
+            <value>
+                <fullName>FAQ</fullName>
+                <default>false</default>
+                <label>FAQ</label>
+            </value>
+            <value>
+                <fullName>Aetna Warmup</fullName>
+                <default>false</default>
+                <label>Aetna Warmup</label>
+            </value>
+            <value>
+                <fullName>Costco Append</fullName>
+                <default>false</default>
+                <label>Costco Append</label>
+            </value>
+            <value>
+                <fullName>Mind-Body</fullName>
+                <default>false</default>
+                <label>Mind-Body</label>
+            </value>
+            <value>
+                <fullName>Physical</fullName>
+                <default>false</default>
+                <label>Physical</label>
+            </value>
+            <value>
+                <fullName>Emotional</fullName>
+                <default>false</default>
+                <label>Emotional</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Doctor Letter</fullName>
+                <default>false</default>
+                <label>Doctor Letter</label>
+            </value>
+            <value>
+                <fullName>Holistic - Append</fullName>
+                <default>false</default>
+                <label>Holistic - Append</label>
+            </value>
+            <value>
+                <fullName>dropouts / re-engage</fullName>
+                <default>false</default>
+                <label>dropouts / re-engage</label>
+            </value>
+            <value>
+                <fullName>not graduated - extension</fullName>
+                <default>false</default>
+                <label>not graduated - extension</label>
+            </value>
+            <value>
+                <fullName>not graduated booster - extension</fullName>
+                <default>false</default>
+                <label>not graduated booster - extension</label>
+            </value>
+            <value>
+                <fullName>graduates - extension</fullName>
+                <default>false</default>
+                <label>graduates - extension</label>
+            </value>
+            <value>
+                <fullName>IB Survey</fullName>
+                <default>false</default>
+                <label>IB Survey</label>
+            </value>
+            <value>
+                <fullName>Hero</fullName>
+                <default>false</default>
+                <label>Hero</label>
+            </value>
+            <value>
+                <fullName>Texas</fullName>
+                <default>false</default>
+                <label>Texas</label>
+            </value>
+            <value>
+                <fullName>Florida</fullName>
+                <default>false</default>
+                <label>Florida</label>
+            </value>
+            <value>
+                <fullName>Cardiac</fullName>
+                <default>false</default>
+                <label>Cardiac</label>
+            </value>
+            <value>
+                <fullName>New Screener</fullName>
+                <default>false</default>
+                <label>New Screener</label>
+            </value>
+            <value>
+                <fullName>IC No-Show Reengage</fullName>
+                <default>false</default>
+                <label>IC No-Show Reengage</label>
+            </value>
+            <value>
+                <fullName>1A/Txt No-Show Reengage</fullName>
+                <default>false</default>
+                <label>1A/Txt No-Show Reengage</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>2018 Campaigns</controllingFieldValue>
+            <valueName>IC No-Show Reengage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2018 Campaigns</controllingFieldValue>
+            <valueName>1A/Txt No-Show Reengage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic health - eligibility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic health - follow-up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic health - health &amp; you</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Stress health - HTML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Stress health - Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic health- HTML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic health- Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Medical health- HTML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Medical health - Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Winning Cohort</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic health - eligibility 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic health - health &amp; you 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic health - follow-up 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic health - eligibility 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic Health Letter 2nd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic Health HTML 2nd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic Health Letter 3rd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Holistic Health HTML 3rd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Stress health 2 - HTML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Stress health 2 - Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Medical health - HTML - 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Medical health - Letter - 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Horizon Lookup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Opt-In</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Costco Append</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Mind-Body</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <controllingFieldValue>Reengage - Append</controllingFieldValue>
+            <valueName>Physical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <controllingFieldValue>Reengage - Append</controllingFieldValue>
+            <valueName>Emotional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <valueName>Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <controllingFieldValue>Reengage - Append</controllingFieldValue>
+            <valueName>Doctor Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reengage</controllingFieldValue>
+            <controllingFieldValue>Reengage - Append</controllingFieldValue>
+            <valueName>Holistic - Append</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Horizon</controllingFieldValue>
+            <valueName>Horizon Interim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Horizon</controllingFieldValue>
+            <valueName>New Screener</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Warmup</controllingFieldValue>
+            <valueName>Text</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Warmup</controllingFieldValue>
+            <valueName>Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FAQ</controllingFieldValue>
+            <valueName>FAQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hand Raiser</controllingFieldValue>
+            <valueName>Aetna Warmup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rev It Up</controllingFieldValue>
+            <valueName>dropouts / re-engage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rev It Up</controllingFieldValue>
+            <valueName>not graduated - extension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rev It Up</controllingFieldValue>
+            <valueName>not graduated booster - extension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rev It Up</controllingFieldValue>
+            <valueName>graduates - extension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rev It Up</controllingFieldValue>
+            <valueName>IB Survey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rev It Up</controllingFieldValue>
+            <valueName>Hero</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hurricane Relief</controllingFieldValue>
+            <valueName>Texas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hurricane Relief</controllingFieldValue>
+            <valueName>Florida</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Graduates</controllingFieldValue>
+            <valueName>Cardiac</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

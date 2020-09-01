@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrimarySubscriberFirstName__c</fullName>
+    <description>Primary Subscriber's first name
+
+THIS FIELD IS TRANSFERRED TO ENABLETO</description>
+    <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Primary Subscriber's first name</inlineHelpText>
+    <label>Primary Subscriber First Name</label>
+    <length>25</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

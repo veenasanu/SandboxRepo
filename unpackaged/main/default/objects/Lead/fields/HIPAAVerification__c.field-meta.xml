@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HIPAAVerification__c</fullName>
+    <description>Did the Customer pass the HIPAA verification using DOB and Address?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Did the Customer pass the HIPAA verification using DOB and Address?</inlineHelpText>
+    <label>HIPAA VERIFICATION</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>YesNoValue</valueSetName>
+    </valueSet>
+</CustomField>

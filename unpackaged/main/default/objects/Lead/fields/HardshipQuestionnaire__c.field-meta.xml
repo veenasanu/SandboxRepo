@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HardshipQuestionnaire__c</fullName>
+    <description>How was the Financial Hardship information sent out/received by the customer?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How was the Financial Hardship information sent out/received by the customer?</inlineHelpText>
+    <label>Hardship Questionnaire</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>HardshipQuestionnaire</valueSetName>
+    </valueSet>
+</CustomField>

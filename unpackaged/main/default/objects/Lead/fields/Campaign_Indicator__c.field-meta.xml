@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Indicator__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Campaign_Specifics__c , "Holistic health - eligibility"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic health - eligibility,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Horizon Interim"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Horizon Interim,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Holistic health - follow-up"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic health - follow-up,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Stress health - HTML"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Stress health - HTML,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Stress health - Letter"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Stress health - Letter,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Holistic health- HTML"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic health- HTML,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Holistic health- Letter"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic health- Letter,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Medical health- HTML"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Medical health- HTML,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Medical health - Letter"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Medical health - Letter,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Winning Cohort"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Winning Cohort,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Holistic health - eligibility 2"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic health - eligibility 2,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Email"), IMAGE("/servlet/servlet.FileDownload?file=015360000025M16", "Email,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Holistic health - health &amp; you 2"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic health - health &amp; you 2,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Holistic health - follow-up 2"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic health - follow-up 2,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Holistic health - eligibility 3"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic health - eligibility 3,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Horizon Interim - eligibility 3"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Horizon Interim - eligibility 3,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Holistic Health Letter 2nd"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic Health Letter 2nd,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Holistic Health HTML 2nd"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic Health HTML 2nd,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Holistic Health Letter 3rd"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic Health Letter 3rd,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Holistic Health HTML 3rd"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic Health HTML 3rd,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Text"), IMAGE("/servlet/servlet.FileDownload?file=015360000025M11", "Text,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Stress health 2 - HTML"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Stress health 2 - HTML,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c , "Stress health 2 - Letter"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Stress health 2 - Letter,",40,40),
+IF(ISPICKVAL(Campaign_Specifics__c, "Holistic health - health &amp; you"), IMAGE("/servlet/servlet.FileDownload?file=015360000025D8q", "Holistic health - health &amp; you",40,40),null))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>A Campaign has been set</inlineHelpText>
+    <label>Campaign Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

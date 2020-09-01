@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Comcast_Plan_Sponsor</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(ClientName__c, "Comcast"), Group_PlanSponsor__c  &lt;&gt; "Comcast Corporation", Group_PlanSponsor__c  &lt;&gt; "Comcast Spectacor", Group_PlanSponsor__c  &lt;&gt; "NBCUniversal",Group_PlanSponsor__c &lt;&gt; "Screener")</errorConditionFormula>
+    <errorDisplayField>Group_PlanSponsor__c</errorDisplayField>
+    <errorMessage>Group/Plan Sponsor must be Comcast Corporation, Comcast Spectacor, NBCUniversal</errorMessage>
+</ValidationRule>
