@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_must_be_18_or_over</fullName>
+    <active>true</active>
+    <description>This validation rule fires if a data lead is inserted/updated with an age below 18 years.</description>
+    <errorConditionFormula>AND(
+   Age__c &lt; 18,
+   ISPICKVAL(Source__c, "Data") 
+)</errorConditionFormula>
+    <errorMessage>Leads under the age of 18 should not be inserted/updated in Salesforce.</errorMessage>
+</ValidationRule>

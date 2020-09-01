@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hard_Opt_Out__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checking this box sets Dialer Status to "Abilto Removed", Customer Status to "Closed_Benefits", and Marketo Sync Filter to unchecked. These fields cannot be updated once this box is checked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checking this box sets Dialer Status to "Abilto Removed", Customer Status to "Closed_Benefits", and Marketo Sync Filter to unchecked. These fields cannot be updated once this box is checked.</inlineHelpText>
+    <label>Hard Opt Out</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

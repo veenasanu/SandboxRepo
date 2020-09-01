@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EscalationElevation__c</fullName>
+    <description>Is this an Escalated Lead?
+
+THIS FIELD IS TRANSFERRED TO ENABLETO</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Was this lead Escalated to Clinical or Management?</inlineHelpText>
+    <label>Escalation/Elevation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Escalation</fullName>
+                <default>false</default>
+                <label>Escalation</label>
+            </value>
+            <value>
+                <fullName>Elevation</fullName>
+                <default>false</default>
+                <label>Elevation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

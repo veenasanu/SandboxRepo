@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReasonFUADeclined__c</fullName>
+    <description>Provide a reason why the previous AbilTo Participant has declined re-enrolling into an FUA/Booster Program.</description>
+    <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Provide a reason why the previous AbilTo Participant has declined re-enrolling into an FUA/Booster Program.</inlineHelpText>
+    <label>Reason FUA Declined</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

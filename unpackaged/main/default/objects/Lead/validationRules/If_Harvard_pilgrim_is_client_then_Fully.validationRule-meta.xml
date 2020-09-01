@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Harvard_pilgrim_is_client_then_Fully</fullName>
+    <active>false</active>
+    <description>If Harvard Pilgrim is the client then group plan sponsor is FULLY INSURED</description>
+    <errorConditionFormula>AND( ISPICKVAL(ClientName__c, "Harvard Pilgrim Health Care"), Group_PlanSponsor__c &lt;&gt; "FULLY INSURED")</errorConditionFormula>
+    <errorDisplayField>Group_PlanSponsor__c</errorDisplayField>
+    <errorMessage>Group/Plan Sponsor must be FULLY INSURED</errorMessage>
+</ValidationRule>

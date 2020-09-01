@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WellCare_Validation</fullName>
+    <active>false</active>
+    <description>WellCare leads must have the group/plan sponsor Wellcare Medicare Advantage</description>
+    <errorConditionFormula>And(
+    ISPICKVAL(ClientName__c , "WellCare"),
+    Group_PlanSponsor__c &lt;&gt;  "WellCare Medicare Advantage",
+    Group_PlanSponsor__c &lt;&gt; "Call Request"
+)</errorConditionFormula>
+    <errorDisplayField>Group_PlanSponsor__c</errorDisplayField>
+    <errorMessage>The group plan sponsor for WellCare leads must be Wellcare Medicare Advantage</errorMessage>
+</ValidationRule>

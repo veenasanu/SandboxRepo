@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_UnitedHealthcare_Plan_Sponsor</fullName>
+    <active>false</active>
+    <description>Ensures UnitedHealthcare plan sponsor is Nielsen, Nielsen-HDHP, Acushnet, Fogo de Chao or Fogo de Chao-HDHP</description>
+    <errorConditionFormula>AND( ISPICKVAL(ClientName__c, "UnitedHealthcare"), Group_PlanSponsor__c  &lt;&gt; "Nielsen", Group_PlanSponsor__c  &lt;&gt; "Nielsen-HDHP", Group_PlanSponsor__c  &lt;&gt; "Acushnet", Group_PlanSponsor__c  &lt;&gt; "Fogo de Chao", Group_PlanSponsor__c  &lt;&gt; "Fogo de Chao-HDHP")</errorConditionFormula>
+    <errorDisplayField>Group_PlanSponsor__c</errorDisplayField>
+    <errorMessage>Group/Plan Sponsor must be Nielsen, Nielsen-HDHP, Acushnet, Fogo de Chao or Fogo de Chao-HDHP</errorMessage>
+</ValidationRule>

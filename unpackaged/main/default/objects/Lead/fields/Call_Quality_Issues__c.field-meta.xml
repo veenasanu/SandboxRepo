@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Quality_Issues__c</fullName>
+    <description>Poor Audio Quality - Static or voices cutting in and out throughout whole call
+No Audio - mutual connection, yet no audio comes through</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Poor Audio Quality - Static or voices cutting in and out throughout whole call
+No Audio - mutual connection, yet no audio comes through</inlineHelpText>
+    <label>Call Quality Issues</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Poor Audio Quality</fullName>
+                <default>false</default>
+                <label>Poor Audio Quality</label>
+            </value>
+            <value>
+                <fullName>No Audio</fullName>
+                <default>false</default>
+                <label>No Audio</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

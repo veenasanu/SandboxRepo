@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Treatment_Status_Description__c</fullName>
+    <externalId>false</externalId>
+    <label>Treatment Status Description</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Treatment_Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administrative Decline, Unable to contact member after missed session(s)</fullName>
+                <default>false</default>
+                <label>Administrative Decline, Unable to contact member after missed session(s)</label>
+            </value>
+            <value>
+                <fullName>Cancelled, Cost Sharing, Participant Decline</fullName>
+                <default>false</default>
+                <label>Cancelled, Cost Sharing, Participant Decline</label>
+            </value>
+            <value>
+                <fullName>Cancelled, Does not want counseling, Participant Decline</fullName>
+                <default>false</default>
+                <label>Cancelled, Does not want counseling, Participant Decline</label>
+            </value>
+            <value>
+                <fullName>Cancelled, No Additional Services Needed, Participant Decline</fullName>
+                <default>false</default>
+                <label>Cancelled, No Additional Services Needed, Participant Decline</label>
+            </value>
+            <value>
+                <fullName>Cancelled, Other decline reason, Participant Decline</fullName>
+                <default>false</default>
+                <label>Cancelled, Other decline reason, Participant Decline</label>
+            </value>
+            <value>
+                <fullName>FUA scheduled</fullName>
+                <default>false</default>
+                <label>FUA scheduled</label>
+            </value>
+            <value>
+                <fullName>IC scheduled</fullName>
+                <default>false</default>
+                <label>IC scheduled</label>
+            </value>
+            <value>
+                <fullName>In treatment</fullName>
+                <default>false</default>
+                <label>In treatment</label>
+            </value>
+            <value>
+                <fullName>Pending treatment schedule</fullName>
+                <default>false</default>
+                <label>Pending treatment schedule</label>
+            </value>
+            <value>
+                <fullName>Administrative Decline</fullName>
+                <default>false</default>
+                <label>Administrative Decline</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Administrative Decline, Unable to contact member after missed session(s)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Cancelled, Cost Sharing, Participant Decline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Cancelled, Does not want counseling, Participant Decline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Cancelled, No Additional Services Needed, Participant Decline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Cancelled, Other decline reason, Participant Decline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Administrative Decline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IC Scheduled</controllingFieldValue>
+            <valueName>FUA scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IC Scheduled</controllingFieldValue>
+            <valueName>IC scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Treatment</controllingFieldValue>
+            <valueName>In treatment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending Treatment Schedule</controllingFieldValue>
+            <valueName>Pending treatment schedule</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Treatment_Status_Indicator__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Treatment_Status__c , "Cancelled"), IMAGE("/servlet/servlet.FileDownload?file=015360000025L2e", "Cancelled,",40,40),
+IF(ISPICKVAL(Treatment_Status__c , "Pending Treatment Schedule"), IMAGE("/servlet/servlet.FileDownload?file=015360000025IZS", "Pending Treatment Schedule,",40,40),
+IF(ISPICKVAL(Treatment_Status__c , "In Treatment"), IMAGE("/servlet/servlet.FileDownload?file=015360000025IZS", "In Treatment,",40,40),
+IF(ISPICKVAL(Treatment_Status__c, "IC Scheduled"), IMAGE("/servlet/servlet.FileDownload?file=015360000025IZN", "IC Scheduled",40,40),null))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Treatment Status Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

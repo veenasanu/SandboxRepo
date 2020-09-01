@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notes__c</fullName>
+    <description>Notes Section for use by the AbilTo Specialist
+
+THIS FIELD IS TRANSFERRED TO ENABLETO</description>
+    <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Notes Section for use by the AbilTo Specialist</inlineHelpText>
+    <label>NOTES</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

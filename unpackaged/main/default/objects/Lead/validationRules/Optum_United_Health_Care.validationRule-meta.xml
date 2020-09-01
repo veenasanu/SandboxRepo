@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Optum_United_Health_Care</fullName>
+    <active>true</active>
+    <description>Restricts Group Plan Sponsors for Optum United Healthcare</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(ClientName__c, "Optum - United HealthCare"), 
+
+OR(Group_PlanSponsor__c &lt;&gt; "AMERICAN EXPRESS COMPANY"), 
+
+Group_PlanSponsor__c &lt;&gt; "SCHLAGE LOCK COMPANY LLC DBA ALLEGION", 
+
+Group_PlanSponsor__c &lt;&gt; "PERFORMANCE FOOD GROUP", 
+
+Group_PlanSponsor__c &lt;&gt; "SPROUTS FARMERS MARKET, LLC", 
+
+Group_PlanSponsor__c &lt;&gt; "BASS PRO GROUP, LLC", 
+
+Group_PlanSponsor__c &lt;&gt; "PETSMART",
+
+Group_PlanSponsor__c &lt;&gt; "TARGET CORPORATION",
+
+Group_PlanSponsor__c &lt;&gt; "METLIFE",
+
+Group_PlanSponsor__c &lt;&gt; "CENTURYLINK",
+
+Group_PlanSponsor__c &lt;&gt; "OPTUM360 SERVICES, INC.",
+
+Group_PlanSponsor__c &lt;&gt; "UNITEDHEALTH GROUP",
+
+Group_PlanSponsor__c &lt;&gt; "LEGENDS HOSPITALITY, LLC"
+
+)</errorConditionFormula>
+    <errorDisplayField>Group_PlanSponsor__c</errorDisplayField>
+    <errorMessage>Group/Plan Sponsor must match an ASO value in the United Plan Sponsor Crosswalk.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PhoneTwo__c</fullName>
+    <description>Is there a secondary number that can be used? If so, Input here.
+
+THIS FIELD IS TRANSFERRED TO ENABLETO</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Is there a secondary number that can be used? If so, Input here.</inlineHelpText>
+    <label>Phone Two</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Phone</type>
+</CustomField>

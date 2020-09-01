@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Callable__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+   Manual_Override__c="TRUE" 
+   ||(NOT(ISNULL(Begin_Calling__c)) &amp;&amp; Begin_Calling__c&gt;TODAY()) 
+   ||(TODAY()- DATEVALUE(Last_Referral_Date__c))&gt;365 
+   ||DoNotCall 
+   ||Age__c &lt; 18 
+   ||ISPICKVAL(PhoneLookup__c,"Pending")
+   ||ISPICKVAL( Target__c, "Joyable")
+   ||EC_Reserve__c,
+
+   "Not_Callable", 
+
+   IF(ISPICKVAL(CustomerStatus__c,"New") 
+   || ISPICKVAL(CustomerStatus__c,"In_Process") 
+   || ISPICKVAL(CustomerStatus__c,"Monitoring_Deductible"), "Callable", "Closed") 
+)</formula>
+    <inlineHelpText>Dictates whether lead is callable</inlineHelpText>
+    <label>Callable</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

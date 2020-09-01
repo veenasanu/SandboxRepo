@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Horizon_IB_Commercial_Referral_Control</fullName>
+    <active>true</active>
+    <description>Prevents a record being saved if customer ID starts with 3HZN and GPS is not equal to Horizon SHBP, Horizon Fully-Insured or Community Support Program - NO COACH</description>
+    <errorConditionFormula>AND( 
+   ISPICKVAL( ClientName__c , 'Horizon'),
+   BEGINS( CustomerID__c, "3HZN"), 
+
+   NOT( 
+      OR( 
+         Group_PlanSponsor__c = "Horizon SHBP", 
+         Group_PlanSponsor__c = "Horizon Fully-Insured",
+         Group_PlanSponsor__c = "Community Support Program - NO COACH",
+         Group_PlanSponsor__c = "RWJBH", 
+
+         Group_PlanSponsor__c = "Call Request" 
+      ) 
+   ) 
+)</errorConditionFormula>
+    <errorMessage>If Customer ID starts with 3HZN, Group Plan Sponsor must be Horizon SHBP, Horizon Fully-Insured or Community Support Program - NO COACH</errorMessage>
+</ValidationRule>

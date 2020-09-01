@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FormStack_Health_Insurance__c</fullName>
+    <description>Picklist used in formstack forms to display customer friendly client name values instead of back end values</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Picklist used in formstack forms to display customer friendly client name values instead of back end values</inlineHelpText>
+    <label>FormStack Health Insurance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Formstack_Health_Insurance</valueSetName>
+    </valueSet>
+</CustomField>

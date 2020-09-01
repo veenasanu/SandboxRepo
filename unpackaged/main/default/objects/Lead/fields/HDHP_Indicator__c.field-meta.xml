@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HDHP_Indicator__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+AND(ISPICKVAL(ClientName__c,"Aetna"), Soft_Opt_Out__c= TRUE), "Use Iframe as usual", 
+
+IF( 
+AND(ISPICKVAL(ClientName__c,"Aetna"), ISPICKVAL(High_Deductible_Health_Plan__c,"HDHP With HSA")), "Use Iframe Deductible Only", 
+
+IF( 
+AND(ISPICKVAL(ClientName__c,"Aetna"),Soft_Opt_Out__c=FALSE), "Fully Covered", 
+
+IF( 
+OR( 
+ISPICKVAL(ClientName__c,"Comcast"), 
+ISPICKVAL(ClientName__c,"BCBSLA"), 
+ISPICKVAL(ClientName__c,"BCBST"), 
+ISPICKVAL(ClientName__c,"Premera BCBS of Alaska"), 
+ISPICKVAL(ClientName__c,"Premera BC of Washington"), 
+ISPICKVAL(ClientName__c,"Humana")), "Fully Covered", 
+
+IF( 
+AND(ISPICKVAL(ClientName__c,"Horizon"), 
+ISPICKVAL(High_Deductible_Health_Plan__c,"HDHP With HSA")) 
+,"Use Iframe Deductible Only - IC Fully Covered", 
+
+IF(ISPICKVAL(ClientName__c,"Premera"), "Use Iframe as Usual - IC Fully Covered", 
+
+IF( 
+AND(ISPICKVAL(ClientName__c,"Horizon"), 
+NOT(ISPICKVAL(High_Deductible_Health_Plan__c, "HDHP With HSA"))) 
+,"Fully Covered", 
+
+IF( 
+AND(ISPICKVAL(ClientName__c,"Optum - United HealthCare"), 
+Group_PlanSponsor__c = "AMERICAN EXPRESS COMPANY"), 
+"Use Iframe as Usual - IC Fully Covered", 
+
+IF( 
+AND(OR( 
+ISPICKVAL(ClientName__c,"Harvard Pilgrim Health Care"), 
+ISPICKVAL(ClientName__c,"UnitedHealthcare"), 
+ISPICKVAL(ClientName__c,"United Healthcare - Oxford")), 
+ISPICKVAL(High_Deductible_Health_Plan__c,"HDHP With HSA")) 
+,"Use Iframe Deductible Only - IC Fully Covered", 
+
+IF( 
+AND(ISPICKVAL(ClientName__c,"United Healthcare - Oxford"), 
+Group_PlanSponsor__c = "STATE OF CONNECTICUT"), 
+"Fully Covered", 
+
+IF( 
+AND( 
+ISPICKVAL(ClientName__c,"Optum - United Healthcare"), 
+ISPICKVAL(High_Deductible_Health_Plan__c, "HDHP With HSA"), 
+NOT(Group_PlanSponsor__c = "AMERICAN EXPRESS COMPANY")), 
+"Use Iframe Deductible Only - IC Fully Covered", 
+
+IF( 
+AND( NOT(ISPICKVAL(ClientName__c,"Horizon")), 
+
+NOT(ISPICKVAL(High_Deductible_Health_Plan__c, "HDHP With HSA" )), 
+
+NOT( Group_PlanSponsor__c = "AMERICAN EXPRESS COMPANY")), 
+
+"Fully Covered", 
+
+"use iframe as usual"))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>HDHP Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_TH_Availability_Date_and_Time__c</fullName>
+    <description>indicates the date and time when the individual check the "No TH Availability" field. Works with the No TH Availability workflow and field update</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>indicates the date and time when the individual check the "No TH Availability" field.</inlineHelpText>
+    <label>No TH Availability Date and Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

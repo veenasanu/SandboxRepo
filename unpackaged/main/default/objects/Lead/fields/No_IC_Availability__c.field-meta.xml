@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_IC_Availability__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>indicates if you are not able to schedule the IC in EnableTo</inlineHelpText>
+    <label>No IC Availability</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Treatment Not Scheduled</fullName>
+                <default>false</default>
+                <label>Treatment Not Scheduled</label>
+            </value>
+            <value>
+                <fullName>Scheduling Treatment Resolved</fullName>
+                <default>false</default>
+                <label>Scheduling Treatment Resolved</label>
+            </value>
+            <value>
+                <fullName>Ticked Submitted</fullName>
+                <default>false</default>
+                <label>Ticked Submitted</label>
+            </value>
+            <value>
+                <fullName>Ticket Submitted / Callback Set</fullName>
+                <default>false</default>
+                <label>Ticket Submitted / Callback Set</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

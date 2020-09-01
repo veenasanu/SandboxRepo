@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateTimeReferredforHardship__c</fullName>
+    <description>Date/Time Timestamp for member being referred for Financial Hardship.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Date/Time Timestamp for member being referred for Financial Hardship.</inlineHelpText>
+    <label>Date/Time Referred for Hardship</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>
