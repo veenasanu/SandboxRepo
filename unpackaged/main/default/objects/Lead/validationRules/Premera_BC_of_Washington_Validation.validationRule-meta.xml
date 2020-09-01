@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Premera_BC_of_Washington_Validation</fullName>
+    <active>false</active>
+    <description>The group plan sponsor for Premera BC leads must be Premera FEP</description>
+    <errorConditionFormula>And(
+    ISPICKVAL(ClientName__c , "Premera BC of Washington"),
+    Group_PlanSponsor__c &lt;&gt;  "Premera FEP",
+    Group_PlanSponsor__c &lt;&gt; "Call Request"
+)</errorConditionFormula>
+    <errorDisplayField>Group_PlanSponsor__c</errorDisplayField>
+    <errorMessage>The group plan sponsor for Premera BC of Washington leads must be Premera FEP</errorMessage>
+</ValidationRule>

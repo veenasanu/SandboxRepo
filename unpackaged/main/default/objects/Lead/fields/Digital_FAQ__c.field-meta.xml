@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital_FAQ__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If the individual wants a FAQ emailed</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the individual wants a FAQ emailed</inlineHelpText>
+    <label>Digital FAQ Request</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

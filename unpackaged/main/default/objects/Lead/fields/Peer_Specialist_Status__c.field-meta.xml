@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Peer_Specialist_Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>for cataloging what the status of Peer Specialist engagement is</inlineHelpText>
+    <label>Peer Specialist Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>PassbacktoEngagement Specialist Schedule IC</fullName>
+                <default>false</default>
+                <label>Pass back to Engagement Specialist Schedule IC</label>
+            </value>
+            <value>
+                <fullName>Participant Unreachable</fullName>
+                <default>false</default>
+                <label>Participant Unreachable</label>
+            </value>
+            <value>
+                <fullName>Pass back to Engagement Specialist "Close Lead Out"</fullName>
+                <default>false</default>
+                <label>Pass back to Engagement Specialist "Close Lead Out"</label>
+            </value>
+            <value>
+                <fullName>Calls Exhausted - Email Sent</fullName>
+                <default>false</default>
+                <label>Calls Exhausted - Email Sent</label>
+            </value>
+            <value>
+                <fullName>Calls Exhausted</fullName>
+                <default>false</default>
+                <label>Calls Exhausted</label>
+            </value>
+            <value>
+                <fullName>Send to Service Center Financial Hardship</fullName>
+                <default>false</default>
+                <label>Send to Service Center Financial Hardship</label>
+            </value>
+            <value>
+                <fullName>Send to Service Center General</fullName>
+                <default>false</default>
+                <label>Send to Service Center General</label>
+            </value>
+            <value>
+                <fullName>Send to service center - Treatment Reschedule</fullName>
+                <default>false</default>
+                <label>Send to service center - Treatment Reschedule</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

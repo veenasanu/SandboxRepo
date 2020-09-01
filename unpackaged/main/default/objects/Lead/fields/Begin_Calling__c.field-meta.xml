@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Begin_Calling__c</fullName>
+    <description>Date after which we will begin calling lead.  Currently only used for BCBSLA Prior Authorization date, since loading leads prior to procedure.  Ignored in "Callable" formula if NULL.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Begin Calling Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

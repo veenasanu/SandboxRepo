@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary</fullName>
+    <description>primary record type and all but confidential page layouts are associated with this</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Contacted</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Open</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Unqualified</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

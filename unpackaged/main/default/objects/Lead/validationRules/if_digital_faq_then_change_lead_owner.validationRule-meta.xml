@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>if_digital_faq_then_change_lead_owner</fullName>
+    <active>false</active>
+    <description>if the user selects to send out a digital faq they must change the owner or the record to something other then ableto admin</description>
+    <errorConditionFormula>AND(
+Digital_FAQ__c = TRUE,
+OwnerId &lt;&gt; "00536000002gx4X"
+)</errorConditionFormula>
+    <errorMessage>Hello, You Cannot Select To Send Out A Digital FAQ If The Lead Owner Is AbleTo Admin. Please Change The Ownership Of This Record And Try Again. Thank You</errorMessage>
+</ValidationRule>

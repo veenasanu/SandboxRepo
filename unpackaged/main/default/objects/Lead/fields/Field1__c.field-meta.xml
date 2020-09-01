@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field1__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+AND(ISPICKVAL(ClientName__c,"Aetna"), ISPICKVAL(High_Deductible_Health_Plan__c,"HDHP with HSA")),
+AND(ISPICKVAL(ClientName__c,"UHC"), ISPICKVAL(High_Deductible_Health_Plan__c,"HDHP with HSA")),
+AND(ISPICKVAL(ClientName__c,"Aetna"), CONTAINS(Group_PlanSponsor__c, "First American Financial")), 
+AND(ISPICKVAL(ClientName__c,"Aetna"),
+OR(NOT(ISPICKVAL(High_Deductible_Health_Plan__c,"Non HDHP")), NOT(ISPICKVAL(High_Deductible_Health_Plan__c,"HDHP without HSA"))))),
+
+"CHECK IFRAME",
+
+
+IF(
+OR(
+AND(ISPICKVAL(ClientName__c,"Aetna"),CONTAINS(Group_PlanSponsor__c,"Costco")),
+AND(ISPICKVAL(ClientName__c,"Aetna"), OR(ISPICKVAL(High_Deductible_Health_Plan__c,"Non HDHP"), ISPICKVAL(High_Deductible_Health_Plan__c,"HDHP Without HSA"))),
+AND(ISPICKVAL(ClientName__c,"UnitedHealthcare"), OR(ISPICKVAL(High_Deductible_Health_Plan__c,"Non HDHP"),ISPICKVAL(High_Deductible_Health_Plan__c,"HDHP Without HSA"))),
+(ISPICKVAL(ClientName__c,"Horizon")),
+(ISPICKVAL(ClientName__c,"Comcast")),
+(ISPICKVAL(ClientName__c,"Premera BCBS of Alaska")),
+(ISPICKVAL(ClientName__c,"Premera BC of Washington")),
+(ISPICKVAL(ClientName__c,"BCBST"))),
+
+"FULLY COVERED", ""))</formula>
+    <label>Test HDHP Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>High_Deductible_Health_Plan__c</fullName>
+    <description>THIS FIELD IS TRANSFERRED TO ENABLETO</description>
+    <externalId>false</externalId>
+    <label>High Deductible Health Plan</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HDHP Without HSA</fullName>
+                <default>false</default>
+                <label>HDHP Without HSA</label>
+            </value>
+            <value>
+                <fullName>Non HDHP</fullName>
+                <default>false</default>
+                <label>Non HDHP</label>
+            </value>
+            <value>
+                <fullName>HDHP HSA Unknown</fullName>
+                <default>false</default>
+                <label>HDHP HSA Unknown</label>
+            </value>
+            <value>
+                <fullName>HDHP With HSA</fullName>
+                <default>false</default>
+                <label>HDHP With HSA</label>
+            </value>
+            <value>
+                <fullName>None HDHP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>None HDHP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

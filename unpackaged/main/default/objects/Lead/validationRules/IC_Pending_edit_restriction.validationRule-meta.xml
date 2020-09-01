@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IC_Pending_edit_restriction</fullName>
+    <active>true</active>
+    <description>Prevents Enagement Specialists from setting customer status to IC_Pending</description>
+    <errorConditionFormula>AND( 
+ISCHANGED(CustomerStatus__c), 
+TEXT( CustomerStatus__c ) = "IC_Pending", 
+OR(
+
+$Profile.Id = "00e36000001dT97",
+$Profile.Id = "00e36000001dTMn",
+$Profile.Id = "00e1R000001q7Q4"
+
+)
+
+
+)</errorConditionFormula>
+    <errorMessage>Engagement Specialists are not permitted to set a lead's customer status to IC_Pending.</errorMessage>
+</ValidationRule>

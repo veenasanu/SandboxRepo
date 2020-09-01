@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DaVita_Validation</fullName>
+    <active>true</active>
+    <description>Group Plan Sponsor Validation for DaVita Client</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(ClientName__c ,'DaVita'),
+Group_PlanSponsor__c &lt;&gt; 'Community Support Program - NO COACH'
+)</errorConditionFormula>
+    <errorDisplayField>Group_PlanSponsor__c</errorDisplayField>
+    <errorMessage>Group plan sponsor should match with 'Community Support Program - NO COACH'</errorMessage>
+</ValidationRule>

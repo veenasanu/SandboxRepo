@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_Contact_Method__c</fullName>
+    <description>Preferred Contact Method from formstack forms</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Preferred Contact Method from formstack forms</inlineHelpText>
+    <label>Preferred Contact Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Preferred_Contact_Method</valueSetName>
+    </valueSet>
+</CustomField>

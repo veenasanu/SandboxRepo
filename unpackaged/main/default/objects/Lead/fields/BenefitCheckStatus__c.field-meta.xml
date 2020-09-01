@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BenefitCheckStatus__c</fullName>
+    <description>Confirming the status of the Benefit Check run on these Customers</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Status of the Customer's benefits</inlineHelpText>
+    <label>Benefit Check Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>BenefitCheckStatus</valueSetName>
+    </valueSet>
+</CustomField>

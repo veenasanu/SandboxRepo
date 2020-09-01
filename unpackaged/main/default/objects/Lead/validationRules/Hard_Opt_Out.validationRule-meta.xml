@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hard_Opt_Out</fullName>
+    <active>false</active>
+    <description>Prevents Service and Engagement Center users from modifying fields when Hard Opt Out is checked. This helps ensure a lead will not be contacted</description>
+    <errorConditionFormula>/*Criteria 1 - Checks if user has the engagement specialist or Inbound Service Team Profile*/ 
+
+AND( 
+OR( 
+$Profile.Id = "00e36000001dT97", 
+$Profile.Id = "00e36000001dTMn" 
+), 
+
+/*Criteria 2 - Checks if Hard Opt Out is Checked*/ 
+
+Hard_Opt_Out__c = True, 
+
+/*Criteria 3 - Checks if the user is attempting to modify any one of the fields below*/ 
+
+OR( 
+ISCHANGED( CustomerStatus__c ), 
+ISCHANGED(DialerStatus__c), 
+ISCHANGED( Email_Unsubscribe__c ), 
+ISCHANGED( HasOptedOutOfFax ), 
+ISCHANGED( HasOptedOutOfEmail ), 
+ISCHANGED( Marketo_Sync_Filter__c ), 
+ISCHANGED( Marketing_Email_Opt_In__c ), 
+ISCHANGED( Newsletter_Email_Opt_In__c ), 
+ISCHANGED( DoNotCall ) 
+) 
+)</errorConditionFormula>
+    <errorMessage>You cannot update the following fields while hard opt out is checked: Customer Status, Dialer Status, Email Unsubscribe, Fax Opt Out, Email Opt Out, Marketo Sync Filter, Marketing Email Opt In, Newsletter Email Opt In</errorMessage>
+</ValidationRule>

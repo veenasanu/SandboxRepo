@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrimarySubscriberRelation__c</fullName>
+    <description>Relationship to the Benefit Holder
+
+THIS FIELD IS TRANSFERRED TO ENABLETO</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Relationship to the Benefit Holder</inlineHelpText>
+    <label>Primary Subscriber Relation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>PrimarySubscriber__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>SubscriberRelation</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Parent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Spouse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Child</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
